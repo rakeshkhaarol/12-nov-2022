@@ -44,7 +44,12 @@
             }
             input[type="search"]:focus{
                 box-shadow: none !important;
-            }                 
+            }
+            @media (min-width: 992px){
+                .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+                    max-width: 992px;
+                }
+            }               
         </style>
     </head>
     <body>
@@ -78,8 +83,8 @@
                             
                             </ul>
                             <form class="d-flex rounded " role="search">
-                                <i class="fa-solid fa-magnifying-glass text-white fs-4 mt-2"></i>
-                                <input class="form-control  bg-transparent border border-0" type="search" placeholder="Search" aria-label="Search">
+                                <i class="fa-solid fa-magnifying-glass text-white ps-5 fs-4 mt-2"></i>
+                                <input class="form-control  bg-transparent border border-0 " type="search" placeholder="Search" aria-label="Search">
             
                             </form>
                             <ul>
@@ -101,12 +106,14 @@
                 </header>
             <main>
                 <div class="container h-100 r_br text-center pt-5">
-                    <a href="#" class="btn btn-warning">New in v5.2
+
+                    <a href="https://blog.getbootstrap.com/2022/07/19/bootstrap-5-2-0/" class="btn btn-warning">New in v5.2
                     </a>
-                    <h5 class="d-inline">css variables,responsive offcanvas, new utilities,and more!</h5>
+                    <a href="https://blog.getbootstrap.com/2022/07/19/bootstrap-5-2-0/" class="btn"> css variables,responsive offcanvas, new utilities,and more!</a>
                     <img class="d-block pt-5 mx-auto" src="./img/apple-icon-180x180.png" alt="">
                     <h1 class="border-5">Build fast, responsive sites with Bootstrap</h1>
-                    <h4>Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.</h4>
+                    <h4 class="">Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.</h4>  
+                    <button class="btn pt-3 pb-3 text-center" style="background: lightgray;"> $ npm i bootstrap@5.2.2</button>
 
                 </div>
             </main>
